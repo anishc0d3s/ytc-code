@@ -20,8 +20,13 @@ class Book:
         # Called by ==
         return self.title == other.title and self.author == other.author
     
+    def __gt__(self, other):
+        # Called by 
+        return self.pages > other.pages
+
     def __lt__(self, other):
         # Called by 
+        print("greater than called.")
         return self.pages < other.pages
     
     def __add__(self, other):
