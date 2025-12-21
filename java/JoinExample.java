@@ -1,24 +1,3 @@
-public class ThreadPriorityExample {
-    public static void main(String[] args) {
-        Thread t1 = new Thread(() -> {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("Low priority thread - " + i);
-            }
-        });
-        
-        Thread t2 = new Thread(() -> {
-            for (int i = 0; i < 5; i++) {
-                System.out.println("High priority thread - " + i);
-            }
-        });
-        
-        t1.setPriority(Thread.MIN_PRIORITY);  // Priority 1
-        t2.setPriority(Thread.MAX_PRIORITY);  // Priority 10
-        
-        t1.start();
-        t2.start();
-    }
-}
 
 public class JoinExample {
     public static void main(String[] args) {

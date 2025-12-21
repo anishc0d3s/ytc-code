@@ -1,6 +1,5 @@
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.ArrayList;
 
 public class CopyOnWriteArrayListExample {
     public static void main(String[] args) throws InterruptedException {
