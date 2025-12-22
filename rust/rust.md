@@ -453,6 +453,19 @@ fn read_username() -> Result<String, io::Error> {
 }
 ```
 
+// NULL handling
+Option<T>
+├── Some(value)  → "Has a value"
+└── None         → "No value" (safe null)
+
+// ERROR handling  
+Result<T, E>
+├── Ok(value)    → "Success"
+└── Err(error)   → "Failure" (with reason)
+
+Option = safe null handling
+Result = safe error handling
+
 ## Next Steps
 
 1. **Read the Rust Book**: The official guide at doc.rust-lang.org/book
@@ -469,3 +482,7 @@ fn read_username() -> Result<String, io::Error> {
 - Cargo Book: doc.rust-lang.org/cargo
 
 Happy coding! 🦀
+
+
+
+
